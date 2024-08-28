@@ -5,24 +5,25 @@ import './Products.css'
 import english from '../../assets/english.jpg'
 import french from '../../assets/french.jpg'
 import right_arrow from '../../assets/right_arrow.png'
+import {ArrowRightOutlined} from "@ant-design/icons";
 
 
 const Products = () => {
   return (
 
     <section>
-    <div class="row">
+    <div className="row">
       <h1>Learn English and French  with Us</h1>
       <p>Improve your English and French speaking, listening,reading and writing skills with our expert teachers</p>
     </div>
-    <div class="row">
+    <div className="row">
 
      
 
-      <div class="column">
-        <div class="card">
-          <div class="icon">
-          <i class="fa-solid fa-people-arrows"></i>
+      <div className="column">
+        <div className="card">
+          <div className="icon">
+            <i className="fa-solid fa-people-arrows"></i>
           </div>
           <h3>Learn English</h3>
           <p className="text-gray-600 text-md md:text-lg">
@@ -30,14 +31,19 @@ const Products = () => {
             asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
             commodi.
           </p>
-          <button className='btn'>Learn More <img src={right_arrow} alt='' /> </button>
+          <button
+              className="mt-8 mx-auto flex gap-3 items-center px-6 py-2 bg-black rounded-full text-white fade-in-up"
+          >
+            Learn More
+            <ArrowRightOutlined/>
+          </button>
         </div>
       </div>
-    
-      <div class="column">
-        <div class="card">
-          <div class="icon">
-          <i class="fa-solid fa-people-arrows"></i>
+
+      <div className="column">
+        <div className="card">
+          <div className="icon">
+            <i className="fa-solid fa-people-arrows"></i>
           </div>
           <h3>Learn French</h3>
           <p className="text-gray-600 text-md md:text-lg">
@@ -46,11 +52,16 @@ const Products = () => {
             commodi.
           </p>
 
-          <button className='btn'>Learn More <img src={right_arrow} alt='' /> </button>
+          <button
+              className="mt-8 mx-auto flex gap-3 items-center px-6 py-2 bg-black rounded-full text-white fade-in-up"
+          >
+            Learn More
+            <ArrowRightOutlined/>
+          </button>
         </div>
       </div>
     </div>
-  </section>
+    </section>
 
 
   )

@@ -1,4 +1,3 @@
-import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/About'
 import Social from './Components/Social/Social';
@@ -9,6 +8,7 @@ import Language from "./Components/Social/Social.jsx";
 import Footer from "./Footer.jsx";
 import StudyAbroadCarousel from "./Components/study-abroad/ui/StudyAbroadCarousel.jsx";
 import {useEffect} from "react";
+import DefaultNavbar from "./Components/Navbar/Navbar.jsx";
 
 
 
@@ -18,7 +18,7 @@ const App = () => {
     }, []);
     return (
     <div>
-        <Navbar/>
+        <DefaultNavbar />
         <Hero/>
         <About/>
         <Products/>
