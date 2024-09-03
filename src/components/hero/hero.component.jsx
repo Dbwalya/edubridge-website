@@ -1,57 +1,48 @@
-import React from 'react';
-import { ArrowRightOutlined } from "@ant-design/icons";
 
-export default function Hero() {
+export default function HeroComponent({title, image, description}) {
+
     return (
-        <div className="flex flex-col items-center py-24 px-5 md:justify-center h-screen bg-gray-100 relative overflow-hidden">
-            {/* Dynamic Wave Gradient */}
-            <div className="absolute top-0 left-0 w-full h-full">
-                <svg
-                    className="wave-animation h-full"
-                    viewBox="0 0 1440 320"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stopColor="#ff7e5f" />
-                            <stop offset="50%" stopColor="#feb47b" />
-                            <stop offset="100%" stopColor="#ff7e5f" />
-                        </linearGradient>
-                    </defs>
-                    <path
-                        fill="url(#gradient)"
-                        fillOpacity="1"
-                        d="M0,96L48,101.3C96,107,192,117,288,106.7C384,96,480,64,576,58.7C672,53,768,75,864,96C960,117,1056,139,1152,122.7C1248,107,1344,53,1392,26.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-                    ></path>
-                </svg>
-            </div>
+        <div className="">
+            <div className="relative isolate px-6 sm:pt-14 lg:px-8"
+                style={{
+                    backgroundImage: `url(${image})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
 
-            {/* Content */}
-            <div className="text-center md:w-4/5 relative z-10">
-                <h1
-                    className="text-5xl md:text-7xl text font-bold text-gray-800 fade-in-up"
-                    style={{ animationDelay: "0.2s" }}
+                }}
+            >
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                 >
-                    We ensure you that we are the Best Study center
-                </h1>
-                <p
-                    className="mt-4 text-lg fade-in-up text-gray-800"
-                    style={{ animationDelay: "0.4s" }}
+                </div>
+                <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-10 h-screen">
+                    <div className="text-center">
+                        <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+                            {title}
+                        </h1>
+                        <p className="mt-6 text-lg leading-8 text-gray-200">
+                           {description}
+                        </p>
+                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                            <a
+                                href="#"
+                                className="rounded-md bg-[#d3ad56] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[]-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            >
+                                Get started
+                            </a>
+                            <a href="#" className="text-sm font-semibold leading-6 text-white">
+                                Learn more <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
                 >
-                    At our online study center, we pride ourselves on delivering personalized,
-                    high-quality education tailored to each student's unique needs, ensuring
-                    they receive the most effective support possible. Our cutting-edge
-                    technology and expert instructors provide an engaging and interactive
-                    learning experience, making complex subjects accessible and enjoyable.
-                </p>
-                <button
-                    className="mt-8 mx-auto flex gap-3 items-center px-6 py-2 bg-black rounded-full text-white fade-in-up"
-                    style={{ animationDelay: "0.6s" }}
-                >
-                    Learn More
-                    <ArrowRightOutlined />
-                </button>
+                </div>
             </div>
         </div>
-    );
+    )
 }

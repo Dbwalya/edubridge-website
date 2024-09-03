@@ -1,14 +1,15 @@
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import Social from './Components/Social/Social';
-import Products from './Components/Products/Products';
-import Workstation from './Components/Workstation/Workstation'
-import Contact from './Components/Contact/Contact';
-import Language from "./Components/Social/Social.jsx";
+import hero_image from './assets/hero.JPG'
+import HeroComponent from './components/hero/hero.component.jsx'
+import About from './components/about/About'
+import Social from './components/social/Social';
+import Products from './components/products/Products';
+import Workstation from './components/workstation/Workstation'
+import Contact from './components/contact/Contact';
+import Language from "./components/social/Social.jsx";
 import Footer from "./Footer.jsx";
-import StudyAbroadCarousel from "./Components/study-abroad/ui/StudyAbroadCarousel.jsx";
+import StudyAbroadCarousel from "./components/study-abroad/ui/StudyAbroadCarousel.jsx";
 import {useEffect} from "react";
-import DefaultNavbar from "./Components/Navbar/Navbar.jsx";
+import DefaultNavbar from "./components/navbar/navbar.component.jsx";
 
 
 
@@ -19,7 +20,18 @@ const App = () => {
     return (
     <div>
         <DefaultNavbar />
-        <Hero/>
+        <HeroComponent
+                title="We ensure you that we are the Best Study center"
+                image={hero_image}
+                description="
+                At our online study center, we pride ourselves on
+                 delivering personalized, high-quality education 
+                 tailored to each student's unique needs, ensuring they 
+                 receive the most effective support possible. Our cutting-edge
+                  technology and expert instructors provide an engaging and interactive learning
+                 experience, making complex subjects accessible and enjoyable.
+                "
+           />
         <About/>
         <Products/>
         <Social/>

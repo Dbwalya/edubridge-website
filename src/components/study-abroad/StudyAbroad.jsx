@@ -1,15 +1,23 @@
 import { motion } from "framer-motion";
-import Navbar from "../Navbar/Navbar.jsx";
+import Navbar from "../navbar/navbar.component.jsx";
 import headerCover from "../../assets/studyabroad_cover.png";
 import socialEnterprise from "../../assets/social_enteprise.png";
 import AbroadCard from "./ui/AbroadCard.jsx";
-import applicationAssistant from '../../assets/application-assistant.png';
+import profile_assessment from "../../assets/profile_assessment.JPG";
+import university_selection from "../../assets/university_selection.JPG";
+import application_assistance from "../../assets/application_assistance.JPG";
+import community_development from "../../assets/community_development.JPG"
+import social_sustainability from "../../assets/social_sustainability.JPG"
+import charity from "../../assets/charity.JPG"
+
 import universitySelection from '../../assets/university-selection.png';
 import profileAssessment from '../../assets/profile-assessment.png';
 import DefaultDocument from "./ui/DefaultDocument.jsx";
 import SocialEnterpriseCard from "./ui/SocialEnterpriseCard.jsx";
 import { Input } from "antd";
 import Footer from "../../Footer.jsx";
+import HeroComponent from "../hero/hero.component.jsx";
+import ServiceCard from "../services/ui/ServiceCard.jsx";
 
 const StudyAbroad = () => {
     const animateFromLeft = {
@@ -20,13 +28,18 @@ const StudyAbroad = () => {
     return (
         <div>
             <Navbar />
-            <header
-                style={{ backgroundImage: `url(${headerCover})` }}
-                className="h-screen flex items-center bg-no-repeat bg-cover bg-center
-                    bg-gray-800 bg-opacity-75 px-5 md:px-24"
-            >
-                <h1 className="text-white font-extrabold text-6xl">Look through Our Study Abroad <br /> services </h1>
-            </header>
+           <HeroComponent
+                title="Look through Our Study Abroad services"
+                image={headerCover}
+                description="
+                At our online study center, we pride ourselves on
+                 delivering personalized, high-quality education 
+                 tailored to each student's unique needs, ensuring they 
+                 receive the most effective support possible. Our cutting-edge
+                  technology and expert instructors provide an engaging and interactive learning
+                 experience, making complex subjects accessible and enjoyable.
+                "
+           />
             <div className="flex flex-col py-24 pb-24">
                 <div className="flex flex-col mx-auto text-center">
                     <h1 className="text-3xl mb-4">OUR STUDY SERVICES</h1>
@@ -41,27 +54,36 @@ const StudyAbroad = () => {
                     variants={animateFromLeft}
                     viewport={{ once: true }}
                 >
-                    <AbroadCard
-                        image={profileAssessment}
+                   <ServiceCard 
                         title="Profile Assessment"
-                        description="Jasper Consultancy extends a helping
-                        hand to students seeking guidance on their educational
-                        journey through our free consultancy services"
+                        description="
+                         Jasper Consultancy extends a helping hand to 
+                         students seeking guidance on their educational
+                         journey through our Free Counselling services.
+                        "
+                        image={profile_assessment}
                     />
-                    <AbroadCard
-                        image={universitySelection}
+                    <ServiceCard 
                         title="University Selection"
-                        description="Jasper Consultancy extends a helping
-                        hand to students seeking guidance on their educational
-                        journey through our free consultancy services"
+                        description="
+                         Jasper Consultancy extends a helping hand to 
+                         students seeking guidance on their educational
+                         journey through our Free Counselling services.
+                        "
+                        image={university_selection}
+
                     />
-                    <AbroadCard
-                        image={applicationAssistant}
-                        title="Application Assistant"
-                        description="Jasper Consultancy extends a helping
-                        hand to students seeking guidance on their educational
-                        journey through our free consultancy services"
+                    <ServiceCard 
+                        title="Application Assistance"
+                        description="
+                         Jasper Consultancy extends a helping hand to 
+                         students seeking guidance on their educational
+                         journey through our Free Counselling services.
+                        "
+                        image={application_assistance}
+
                     />
+
                 </motion.div>
             </div>
             <div className="bg-black h-screen flex justify-between items-center">
@@ -150,26 +172,42 @@ const StudyAbroad = () => {
                     variants={animateFromLeft}
                     viewport={{ once: true }}
                 >
-                    <SocialEnterpriseCard
+                    <SocialEnterpriseCard 
+                        description="
+                            Improve your English and French speaking, listening,
+                            reading and writing skills with our expert teachersking,
+                            listening,reading and writing skills with odddgfjghjfffk
+                        "
+                        title="Social Sustainability"
+                        image={social_sustainability}
+                    />
+                    <SocialEnterpriseCard 
+                        description="
+                            Improve your English and French speaking, listening,
+                            reading and writing skills with our expert teachersking,
+                            listening,reading and writing skills with odddgfjghjfffk
+                        "
+                        title="Social Sustainability"
+                        image={community_development}
+                    />
+                    <SocialEnterpriseCard 
+                        description="
+                            Improve your English and French speaking, listening,
+                            reading and writing skills with our expert teachersking,
+                            listening,reading and writing skills with odddgfjghjfffk
+                        "
                         title="Community Development"
-                        description="Improve your English and French speaking, listening, reading,
-                            and writing skills with our expert teachers."
+                        image={charity}
                     />
-                    <SocialEnterpriseCard
-                        title="Environmental Sustainability"
-                        description="Improve your English and French speaking, listening, reading,
-                            and writing skills with our expert teachers."
+                    <SocialEnterpriseCard 
+                        description="
+                            Improve your English and French speaking, listening,
+                            reading and writing skills with our expert teachersking,
+                            listening,reading and writing skills with odddgfjghjfffk
+                        "
+                        title="Social Sustainability"
                     />
-                    <SocialEnterpriseCard
-                        title="Community Development"
-                        description="Improve your English and French speaking, listening, reading,
-                            and writing skills with our expert teachers."
-                    />
-                    <SocialEnterpriseCard
-                        title="Community Development"
-                        description="Improve your English and French speaking, listening, reading,
-                            and writing skills with our expert teachers."
-                    />
+                  
                 </motion.div>
                 <span className="text-xl mt-8 font-semibold">Connect with us now!</span>
                 <div className="flex mt-5">

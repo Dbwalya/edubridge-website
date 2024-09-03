@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import App from "./App.jsx";
-import StudyAbroad from "./Components/study-abroad/StudyAbroad.jsx";
-import Services from "./Components/Services/Services.jsx";
+import StudyAbroad from "./components/study-abroad/StudyAbroad.jsx";
+import Services from "./components/services/Services.jsx";
 
 const router = createBrowserRouter([
     { path: 'Edubridge-github', element: <App />},
