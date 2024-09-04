@@ -116,7 +116,7 @@ export default function DefaultNavbar () {
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                         Events
                     </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="/Edubridge-github/social-enterprise" className="text-sm font-semibold leading-6 text-gray-900">
                         Social Enterprise
                     </a>
                 </PopoverGroup>

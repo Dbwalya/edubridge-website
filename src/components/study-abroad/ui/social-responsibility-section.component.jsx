@@ -1,3 +1,6 @@
+import servicesImage_5 from "../../../assets/social_enterprise_image-5.JPG"
+import servicesImage_6 from "../../../assets/social_enterprise_image-6.JPG"
+
 export default function SocialResponsiblityComponent () {
     return (
         <section class="w-4/5 md:w-full mx-auto dark:text-white ">
@@ -10,7 +13,9 @@ export default function SocialResponsiblityComponent () {
                 <div className="flex flex-col space-y-16">
                     <div class="xl:w-[80%] sm:w-[85%] xs:w-[90%] mx-auto flex-col flex lg:flex-row bg-white p-4 shadow-lg xs:flex-col lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-4">
                     <div class="lg:w-[50%] xs:w-full mb-4">
-                        <img class="lg:rounded-t-lg sm:rounded-sm xs:rounded-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxob21lfGVufDB8MHx8fDE3MTA0OTAwNjl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
+                        <img class="lg:rounded-t-lg sm:rounded-sm xs:rounded-sm"
+                         src={servicesImage_5}
+                          alt="billboard image" />
                     </div>
                     <div class="lg:w-[50%] sm:w-full xs:w-full  dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
                         <h2 class="text-3xl font-semibold text-gray-900">Community Development</h2>
@@ -22,7 +27,9 @@ export default function SocialResponsiblityComponent () {
                     </div>
                     <div class="xl:w-[80%] sm:w-[85%] xs:w-[90%] p-4 bg-white mx-auto flex-col shadow-lg flex lg:flex-row-reverse xs:flex-col lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-4">
                     <div class="lg:w-[50%] xs:w-full mb-4">
-                        <img class="lg:rounded-t-lg sm:rounded-sm xs:rounded-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxob21lfGVufDB8MHx8fDE3MTA0OTAwNjl8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="billboard image" />
+                        <img class="lg:rounded-t-lg sm:rounded-sm xs:rounded-sm" 
+                        src={servicesImage_6} 
+                        alt="billboard image" />
                     </div>
                     <div class="lg:w-[50%] sm:w-full xs:w-full md:p-4 xs:p-0 rounded-md dark:text-gray-400">
                         <h2 class="text-3xl font-semibold text-gray-900 ">Environmental Sustainability</h2>
