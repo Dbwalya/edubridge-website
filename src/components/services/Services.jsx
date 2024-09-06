@@ -65,7 +65,7 @@ const Services = () => {
         variants={staggerContainer}
       >
         <motion.div
-          className="flex flex-col items-center gap-4 top-1/4 md:right-32"
+          className="flex flex-col items-center gap-4 top-1/4"
           variants={heroAnimation}
         >
           <motion.h1
