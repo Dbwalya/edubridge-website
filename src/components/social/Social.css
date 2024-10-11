@@ -3,67 +3,108 @@
     height: 100%;
     margin-left: 10%;
     width: 80%;
-    margin-top: 5%;
-   
+    margin-top: 15%;
+
 
 }
 
 .social-container h2{
     width: 100%;
     text-align: center;
-    font-size: 2.75em;
+    font-size: 3.75em;
     margin: 0.5em ;
     font-weight: 600;
-    color: #070024;
+    color: #000000;
 }
 
-.social-container .services{
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
-.social-container .services .card{
-    width: 350px;
+
+.social-container p{
+    width: 100%;
     text-align: center;
-    background: #fafafa;
-    padding: 20px 15px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+    margin: 1.5rem;
+    line-height: 40px;
+    margin-right: 12vh;
+}
+
+
+/* 3d css cards */
+
+.flip {
+    height: 50vh;
+    display: flex;
+    padding: 0 4em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.whole-con {
+    perspective: 1000px;
+    height: 40vh;
+    width: 100%;
     cursor: pointer;
-    transition: 0.3s;
 }
-
-.social-container .services .card:hover{
-    background: #E9AB17;
+.box-c   {
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
 }
-
-.social-container .services .card .content{
-    transition: 0.3s;
+.front,
+.back-c {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    backface-visibility: hidden;
 }
-
-.social-container .services .card:hover .content{
-    transform: scale(1.07);
+.front {
+    background: linear-gradient(to right, #ffffff, #f8f8f8);
 }
-
-.social-container .services .card .content .icon{
-    padding: 5px 0;
-    color: white;
+.front img {
+    width: 25rem;
+    height: 17rem;
+    padding: 1rem;
 }
-
-.social-container .services .card .content .icon i{
-    font-size: 40px;
+.content {
+    transform: translateZ(60px);
 }
-
-.social-container .services .card:hover .content .title{
-    color: white;
+.content h3 {
+    font-size: 22px;
+    margin-top: 1em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: rgb(66, 66, 66);
 }
-
-.social-container .services .card .content .title{
-    padding: 5px 0;
-    font-size: 24px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    transition: 0.3s;
+.content p {
+    font-size: 1.5rem;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+    padding: 0 3em;
+}
+.back-c {
+    background-color: #000000;
+    transform: rotateX(180deg);
+}
+.whole-con:hover .box-c {
+    transform: rotateX(180deg);
+}
+@media screen and (min-width: 992px) {
+    section {
+        padding: 0 1em;
+    }
+    .whole-con{
+        flex-basis: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1.5em;
+    }
 }

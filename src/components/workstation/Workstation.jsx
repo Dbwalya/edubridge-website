@@ -1,38 +1,29 @@
-import desk from '../../assets/desk.png'
-import './Workstation.css'
-import logo from '../../assets/logo.png'
-import right_arrow from '../../assets/right_arrow.png'
-import {ArrowRightOutlined} from "@ant-design/icons";
+import logo from '../../assets/logo.png';
+import {RightCircleOutlined} from "@ant-design/icons";
+import bookImage from "../../assets/bb.jpg"
 
-const Workstation = () => {
-  return (
-    <div className='work-section'>
-      <div className="desk-img">
-      <img src={desk} alt=''/>
+const Book = () => {
+    return (
+        <div className="w-full py-20 my-20 bg-cover bg-center grid grid-cols-1 md:grid-cols-3 gap-10 items-center justify-around"
+            style={{ backgroundImage: `url(${bookImage})` }}
+        >
+            <div className="">
+                <img src={logo} alt="" className="h-40 mx-auto" />
+            </div>
 
-      </div>
+            <div className="">
+                <h2 className="text-center text-4xl font-semibold text-white my-2">Book an Affordable Work Station</h2>
+                <p className="text-center text-white text-lg my-4 leading-[35px]">
+                    We offer affordable work station with 24/7 power supply and unlimited internet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et commodi.
+                </p>
+            </div>
 
-        <div className="left-text">
-            <img src={logo} alt='' className="object-contain"/>
-
-            <h1>Book an Affordable Work Station</h1>
-            <p className="text-gray-600 text-center text-md md:text-lg">
-                We offer affordable work station with 24/7 power supply and unlimited internet
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                asperiores natus ad morem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
-                commodi.
-            </p>
-            <button
-                className="bg-black text-white px-4 py-2 rounded-lg
-                     mt-10 hover:bg-gray-700 w-fit
-                      flex items-center hover:gap-2">
-                Learn more
-                <ArrowRightOutlined className="text-sm ml-2"/>
+            <button className="p-4 mx-auto gap-2 hover:gap-4 bg-black text-white text-xl md:h-fit md:w-fit w-2/3  rounded-full cursor-pointer border-0 flex items-center justify-center transition duration-300 hover:bg-[#d3ad56]">
+                Book Now
+                <RightCircleOutlined />
             </button>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Workstation
+export default Book;

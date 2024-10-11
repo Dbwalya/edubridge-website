@@ -3,7 +3,7 @@ import {ArrowRightOutlined} from "@ant-design/icons";
 
 const About = () => {
     return (
-        <div className="py-14 mx-auto w-5/6 h-screen">
+        <div className="py-14 mx-auto w-5/6">
             <div className="">
                 <div className="">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-6 items-center mb-6">
@@ -24,7 +24,7 @@ const About = () => {
                             We offer personalized, high-quality learning experiences tailored to individual needs while supporting global educational opportunities that promote cross-cultural understanding. By reinvesting our profits into community-driven initiatives, we ensure that every
                             student's success also contributes to meaningful, positive change in the world.
                          </span>
-                        <button className="bg-black text-white px-4 py-2 rounded-lg mt-10 hover:bg-gray-700 flex items-center hover:gap-2">
+                        <button className="mx-auto bg-black text-white px-4 py-2 rounded-lg mt-10 hover:bg-gray-700 flex items-center hover:gap-2">
                             Learn more
                             <ArrowRightOutlined className="text-sm ml-2" />
                         </button>

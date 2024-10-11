@@ -1,21 +1,12 @@
-
-
-
-
 section{
     justify-self: center;
     align-items: center;
     align-content: center;
-   
 }
-
-
 .row {
     display: flex;
     flex-wrap: wrap;
     margin: 0.1em ;
- 
- 
   }
   .row h1 {
     width: 100%;
@@ -25,16 +16,14 @@ section{
     font-weight: 600;
     color: #070024;
   }
-
   .row p{
     width: 100%;
     text-align: center;
     font-size: 1rem;
     margin: 0.5em ;
     padding-bottom: 30px;
-    
-    
   }
+
   .column {
     padding: 1em;
     margin-left: 11%;
