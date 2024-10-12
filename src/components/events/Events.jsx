@@ -27,7 +27,7 @@ const Events = () => {
             />
 
 
-            <div className="py-14 mx-auto w-5/6 h-screen">
+            <div className="py-14 mx-auto w-5/6">
                 <div className="">
                     <div className="">
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-6 items-center mb-6">
@@ -50,7 +50,7 @@ const Events = () => {
                             student's success also contributes to meaningful, positive change in the world.
                          </span>
                             <button
-                                className="bg-black text-white px-4 py-2 rounded-lg mt-10 hover:bg-gray-700 flex items-center hover:gap-2">
+                                className="bg-black text-white px-5 py-3 rounded-full mt-10 hover:bg-gray-700 flex items-center hover:gap-2">
                                 Learn more
                                 <ArrowRightOutlined className="text-sm ml-2"/>
                             </button>
@@ -279,7 +279,7 @@ const Events = () => {
                 </div>
 
                 <div className="w-full flex justify-center">
-                    <button type="submit" className="w-full md:max-w-lg mt-6 bg-black text-white p-3 rounded">
+                    <button type="submit" className="w-full md:max-w-lg mt-6 bg-black text-white p-3 rounded-full">
                         Send Message
                     </button>
                 </div>

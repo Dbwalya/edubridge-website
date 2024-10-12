@@ -22,10 +22,10 @@ const App = () => {
         window.scrollTo(0, 0);
     }, []);
     return (
-    <div>
+    <div className="">
         <DefaultNavbar />
 
-        <div className="w-screen">
+        <div className="">
             <HeroComponent
                 title="We ensure you that we are the Best Study center"
                 image={hero_image}
@@ -43,10 +43,8 @@ const App = () => {
             <Products />
             <Social/>
             <Book />
-            {/*<StudyAbroadCarousel/>*/}
             <Contact />
             <Slider />
-            {/*<Language/>*/}
             <Subscribe />
         </div>
         <Footer />

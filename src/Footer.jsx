@@ -3,7 +3,7 @@ import { MailOutlined, PhoneOutlined, WhatsAppOutlined, FacebookOutlined, Linked
 const Footer = () => {
     return (
         <footer className="bg-black text-white py-8 w-full">
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ml-10 md:place-items-center">
 
                 <div>
                     <h4 className="text-yellow-500 font-semibold mb-4 text-xl">ABOUT</h4>

@@ -11,19 +11,18 @@ import social_sustainability from "../../assets/social_sustainability.JPG"
 import charity from "../../assets/charity.JPG"
 
 import universitySelection from '../../assets/university-selection.png';
-import profileAssessment from '../../assets/profile-assessment.png';
 import DefaultDocument from "./ui/DefaultDocument.jsx";
 import SocialEnterpriseCard from "./ui/SocialEnterpriseCard.jsx";
-import { Input } from "antd";
 import Footer from "../../Footer.jsx";
 import HeroComponent from "../hero/hero.component.jsx";
 import ServiceCard from "../services/ui/ServiceCard.jsx";
 import { FileTextOutlined } from "@ant-design/icons";
+import Subscribe from "../subscribe/Subscribe.jsx";
 
 const StudyAbroad = () => {
-    const animateFromLeft = {
-        hidden: { opacity: 0, x: -100 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    const animateFromBottom = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     };
 
     return (
@@ -42,9 +41,10 @@ const StudyAbroad = () => {
                 "
            />
             <div className="flex flex-col py-24 pb-24">
-                <div className="flex flex-col mx-auto text-center">
-                    <h1 className="text-3xl mb-4">OUR STUDY SERVICES</h1>
-                    <span>We are a true representation of excellence company</span>
+                <div className="flex flex-col gap-3 text-center w-full mx-auto mb-6">
+                    <h2 className="text-4xl text-center font-semibold px-4">Our Study Services</h2>
+                    <p className="text-gray-600">We are a true representation of an excellent university
+                        for success.</p>
                 </div>
 
                 {/*👇👇 Animate these components */}
@@ -52,10 +52,10 @@ const StudyAbroad = () => {
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-4/5 gap-5 md:gap-10 md: mx-auto mt-20"
                     initial="hidden"
                     whileInView="visible"
-                    variants={animateFromLeft}
-                    viewport={{ once: true }}
+                    variants={animateFromBottom}
+                    viewport={{once: true}}
                 >
-                   <ServiceCard 
+                    <ServiceCard
                         title="Profile Assessment"
                         description="
                          Jasper Consultancy extends a helping hand to 
@@ -64,7 +64,7 @@ const StudyAbroad = () => {
                         "
                         image={profile_assessment}
                     />
-                    <ServiceCard 
+                    <ServiceCard
                         title="University Selection"
                         description="
                          Jasper Consultancy extends a helping hand to 
@@ -74,7 +74,7 @@ const StudyAbroad = () => {
                         image={university_selection}
 
                     />
-                    <ServiceCard 
+                    <ServiceCard
                         title="Application Assistance"
                         description="
                          Jasper Consultancy extends a helping hand to 
@@ -87,14 +87,14 @@ const StudyAbroad = () => {
 
                 </motion.div>
             </div>
-            <div className="bg-black h-screen flex justify-between items-center">
+            <div className="bg-gray-800 py-24 flex justify-between items-center">
 
                 {/*👇👇 Animate these components */}
                 <motion.div
                     className="flex flex-col md:flex-row gap-24 mx-auto w-4/5 justify-between"
                     initial="hidden"
                     whileInView="visible"
-                    variants={animateFromLeft}
+                    variants={animateFromBottom}
                     viewport={{ once: true }}
                 >
                     <div className="flex flex-col justify-center space-y-8 max-w-lg text-center md:text-left">
@@ -115,66 +115,77 @@ const StudyAbroad = () => {
                 </motion.div>
             </div>
             <div className="py-24">
-                <h2 className="text-3xl font-semibold text-center">
-                    <span className="bg-[#d3ad56] px-6 rounded-lg text-white">Document</span> Preparation
-                </h2>
+                <div className="flex flex-col gap-3 text-center w-full mx-auto mb-6">
+                    <h2 className="text-4xl text-center font-semibold">Document Preparation</h2>
+                    <span className="text-gray-600 font-semibold">Ensuring accuracy and completeness for a successful application process.</span>
+                </div>
+
                 <motion.div
                     className="mt-20 w-4/5 mx-auto grid grid-cols-1 gap-20 md:grid-cols-2"
                     initial="hidden"
                     whileInView="visible"
-                    variants={animateFromLeft}
-                    viewport={{ once: true }}
+                    variants={animateFromBottom}
+                    viewport={{once: true}}
                 >
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <DefaultDocument title="Resume"
-                            description="
+                                         description="
                                 Our experts will guide you in crafting a professional resume that highlights your academic 
                                 achievements and skills, ensuring you stand out in your job search
                             "
                         />
                         <DefaultDocument title="SOP"
-                             description="
+                                         description="
                             Create a compelling Statement of Purpose that effectively conveys your 
                             academic goals, research interests, and reasons for choosing your desired program.
                          "
                         />
-                        <DefaultDocument title="LORs" 
-                             description="
+                        <DefaultDocument title="LORs"
+                                         description="
                             Learn how to request and structure Letters of Recommendation 
                             that provide strong, personalized endorsements from your professors or employers.
                          "
                         />
-                        <DefaultDocument title="Essays" 
-                             description="
+                        <DefaultDocument title="Essays"
+                                         description="
                            Receive assistance in writing impactful application essays that showcase your 
                            personality, experiences, and aspirations to admission committees.
                          "
-                        />                       
+                        />
                     </div>
-                    <div className="border bg-[#d3ad56] p-4">
-                    <div className="">
-                        <span className="text-3xl text-gray-700 font-extrabold text-white">
+                    <div className="border bg-gray-800 rounded-lg p-4">
+                        <div className="">
+                        <span className="text-3xl font-extrabold text-white">
                             Improve your English and French speaking, listening, reading,
                             and writing skills with our expert teachers.
                         </span>
-                        <div className="flex gap-3 mt-10">
-                            <div
-                                className="block rounded-lg text-white">
-                                <div className="border-b-2 border-black/20 px-6 py-3 flex justify-between">Videos <FileTextOutlined /></div>
-                                <div className="p-6">
-                                <p className="text-base">
-                                Get expert tips and personalized advice on creating compelling video submissions that enhance your university application. We'll help you craft a narrative that not only showcases your academic achievements but also highlights your unique communication skills, creativity, and personality. Learn how to present yourself confidently on camera, make a lasting impression on the admissions committee, and effectively convey your passion and fit for the program. Our guidance ensures your
-                                 video submission stands out, adding a dynamic and engaging dimension to your application.
-                                </p>
+                            <div className="flex gap-3 mt-10">
+                                <div
+                                    className="block rounded-lg text-white">
+                                    <div
+                                        className="border-b-2 border-black/20 px-6 py-3 flex justify-between">Videos <FileTextOutlined/>
+                                    </div>
+                                    <div className="p-6">
+                                        <p className="text-base">
+                                            Get expert tips and personalized advice on creating compelling video
+                                            submissions that enhance your university application. We'll help you craft a
+                                            narrative that not only showcases your academic achievements but also
+                                            highlights your unique communication skills, creativity, and personality.
+                                            Learn how to present yourself confidently on camera, make a lasting
+                                            impression on the admissions committee, and effectively convey your passion
+                                            and fit for the program. Our guidance ensures your
+                                            video submission stands out, adding a dynamic and engaging dimension to your
+                                            application.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </motion.div>
             </div>
             <div
-                style={{ backgroundImage: `url(${socialEnterprise})` }}
+                style={{backgroundImage: `url(${socialEnterprise})`}}
                 className="bg-no-repeat bg-cover bg-center py-24 grid grid-rows-2 text-white"
             >
                 <div className="grid items-center mx-auto w-5/6 text-4xl">
@@ -203,7 +214,7 @@ const StudyAbroad = () => {
                     className="grid place-items-center py-16 mx-auto w-4/5 gap-8 grid-cols-1 sm:grid-cols-2"
                     initial="hidden"
                     whileInView="visible"
-                    variants={animateFromLeft}
+                    variants={animateFromBottom}
                     viewport={{ once: true }}
                 >
                     <SocialEnterpriseCard 
@@ -244,15 +255,9 @@ const StudyAbroad = () => {
                     />
                   
                 </motion.div>
-                <span className="text-xl mt-8 font-semibold">Connect with us now!</span>
-                <div className="flex mt-5">
-                    <Input
-                        placeholder="Enter your email..."
-                        className="max-w-lg md:w-[340px] mr-2"
-                    />
-                    <button className="bg-black text-sm text-white px-10 rounded">Subscribe</button>
-                </div>
             </div>
+
+            <Subscribe />
             <Footer />
         </div>
     );

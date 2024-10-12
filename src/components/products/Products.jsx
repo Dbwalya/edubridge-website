@@ -2,7 +2,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 
 const Products = () => {
   return (
-      <section className="flex flex-col items-center justify-center py-20 md:px-28">
+      <section className="flex flex-col items-center justify-center py-20 md:px-28 bg-gray-100">
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
             Learn English and French with Us

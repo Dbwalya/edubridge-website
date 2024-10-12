@@ -10,7 +10,7 @@ const AbroadCard = ({title, description, image}) => {
                     {description}
                 </span>
             </div>
-            <button className="my-3 bg-black text-white rounded-md py-2 px-6 cursor-pointer text-sm font-semibold">Call Now</button>
+            <button className="my-3 bg-yellow-500 text-white rounded-full py-2 px-6 cursor-pointer text-sm font-semibold">Call Now</button>
         </div>
     )
 }
