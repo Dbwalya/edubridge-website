@@ -4,7 +4,7 @@ import bookImage from "../../assets/bb.jpg"
 
 const Book = () => {
     return (
-        <div className="w-full py-20 my-20 bg-cover bg-center grid grid-cols-1 md:grid-cols-3 gap-10 items-center justify-around"
+        <div className="w-full py-20 bg-cover bg-center grid grid-cols-1 md:grid-cols-3 gap-10 items-center justify-around"
             style={{ backgroundImage: `url(${bookImage})` }}
         >
             <div className="">
