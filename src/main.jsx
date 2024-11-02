@@ -10,12 +10,12 @@ import AboutUs from "./components/about/About-Us.jsx";
 import Events from "./components/events/Events.jsx";
 
 const router = createBrowserRouter([
-    { path: '/Edubridge-github', element: <App /> },
-    { path: '/Edubridge-github/study-abroad', element: <StudyAbroad /> },
-    { path: '/Edubridge-github/services', element: <Services /> },
-    { path: '/Edubridge-github/social-enterprise', element: <SocialEnterprise /> },
-    { path: '/Edubridge-github/events', element: <Events /> },
-    { path: '/Edubridge-github/about-us', element: <AboutUs /> },
+    { path: '/edubridge-website', element: <App /> },
+    { path: '/edubridge-website/study-abroad', element: <StudyAbroad /> },
+    { path: '/edubridge-website/services', element: <Services /> },
+    { path: '/edubridge-website/social-enterprise', element: <SocialEnterprise /> },
+    { path: '/edubridge-website/events', element: <Events /> },
+    { path: '/edubridge-website/about-us', element: <AboutUs /> },
 ]);
 
 createRoot(document.getElementById('root')).render(
