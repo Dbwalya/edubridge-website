@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo_second.png";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ export default function DefaultNavbar() {
           <div className="flex lg:flex-1">
             <Link to="/Edubridge-github" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img alt="" src={logo} className="h-8 w-auto" />
+              <img alt="" src={logo} className="h-11 w-auto" />
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -32,37 +32,37 @@ export default function DefaultNavbar() {
           <div className="hidden lg:flex lg:gap-x-12">
             <Link
                 to="/Edubridge-github"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-lg font-semibold leading-6 text-gray-900"
             >
               Home
             </Link>
             <Link
                 to="/Edubridge-github/about-us"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-lg font-semibold leading-6 text-gray-900"
             >
               About Us
             </Link>
             <Link
                 to="/Edubridge-github/services"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-lg font-semibold leading-6 text-gray-900"
             >
               Services
             </Link>
             <Link
                 to="/Edubridge-github/study-abroad"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-lg font-semibold leading-6 text-gray-900"
             >
               Study Abroad
             </Link>
             <Link
                 to="/Edubridge-github/events"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-lg font-semibold leading-6 text-gray-900"
             >
               Events
             </Link>
             <Link
                 to="/Edubridge-github/social-enterprise"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-lg font-semibold leading-6 text-gray-900"
             >
               Social Enterprise
             </Link>
@@ -70,7 +70,7 @@ export default function DefaultNavbar() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
                 to="/Edubridge-github/contact-us"
-                className="text-sm font-semibold leading-6 border px-5 py-1 bg-black text-white rounded-2xl"
+                className="text-lg font-semibold leading-6 text-gray-900"
             >
               Contact Us{" "}
               <span aria-hidden="true" className="ml-1">

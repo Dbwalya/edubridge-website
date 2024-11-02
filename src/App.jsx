@@ -14,6 +14,7 @@ import Banner from "./components/banner/Banner.jsx";
 import Book from "./components/workstation/Workstation";
 import Slider from "./components/slider/Slider.jsx";
 import Subscribe from "./components/subscribe/Subscribe.jsx";
+import Carousel from "./components/carousel/carousel.component.jsx";
 
 
 
@@ -38,13 +39,17 @@ const App = () => {
                  experience, making complex subjects accessible and enjoyable.
                 "
            />
-            <About/>
+            <div className="bg-gray-100">
+             <About />
+            </div>
+
             <Banner />
             <Products />
             <Social/>
             <Book />
             <Contact />
             <Slider />
+            {/*<Carousel />*/}
             <Subscribe />
         </div>
         <Footer />

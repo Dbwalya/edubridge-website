@@ -23,13 +23,13 @@ const Banner = () => {
             <div className="col-span-2 flex flex-col justify-center ml-6">
                 <h2 className="text-4xl mb-2 md:text-2.5xl font-medium">What's included in the Study Hub?</h2>
                 <ul>
-                    <li className="text-gray-600 md:text-2xl text-md leading-7 mt-4">
+                    <li className="text-gray-600 leading-8 md:text-xl text-md mt-4">
                        1. Free online study content which covers the full syllabus
                     </li>
-                    <li className="text-gray-600 md:text-2xl text-md leading-7 mt-2">
+                    <li className="text-gray-600 md:text-xl text-md leading-8 mt-4">
                         2. Short quizzes to test understanding as you progress through the chapters
                     </li>
-                    <li className="text-gray-600 md:text-2xl text-md leading-7 mt-2">
+                    <li className="text-gray-600 md:text-xl text-md leading-8 mt-4">
                        3.  Practice and revision questions and flashcards, to help prepare you for your exam.
                     </li>
                 </ul>

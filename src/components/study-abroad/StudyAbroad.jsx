@@ -18,6 +18,7 @@ import HeroComponent from "../hero/hero.component.jsx";
 import ServiceCard from "../services/ui/ServiceCard.jsx";
 import { FileTextOutlined } from "@ant-design/icons";
 import Subscribe from "../subscribe/Subscribe.jsx";
+import DocumentPreparation from "../study-abroad/document-preparation.component.jsx";
 
 const StudyAbroad = () => {
     const animateFromBottom = {
@@ -114,75 +115,14 @@ const StudyAbroad = () => {
                     />
                 </motion.div>
             </div>
-            <div className="py-24">
+            <div className="py-24 bg-gray-100 ">
                 <div className="flex flex-col gap-3 text-center w-full mx-auto mb-6">
                     <h2 className="text-4xl text-center font-semibold">Document Preparation</h2>
                     <span className="text-gray-600 font-semibold">Ensuring accuracy and completeness for a successful application process.</span>
                 </div>
 
-                <motion.div
-                    className="mt-20 w-4/5 mx-auto grid grid-cols-1 gap-20 md:grid-cols-2"
-                    initial="hidden"
-                    whileInView="visible"
-                    variants={animateFromBottom}
-                    viewport={{once: true}}
-                >
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <DefaultDocument title="Resume"
-                                         description="
-                                Our experts will guide you in crafting a professional resume that highlights your academic 
-                                achievements and skills, ensuring you stand out in your job search
-                            "
-                        />
-                        <DefaultDocument title="SOP"
-                                         description="
-                            Create a compelling Statement of Purpose that effectively conveys your 
-                            academic goals, research interests, and reasons for choosing your desired program.
-                         "
-                        />
-                        <DefaultDocument title="LORs"
-                                         description="
-                            Learn how to request and structure Letters of Recommendation 
-                            that provide strong, personalized endorsements from your professors or employers.
-                         "
-                        />
-                        <DefaultDocument title="Essays"
-                                         description="
-                           Receive assistance in writing impactful application essays that showcase your 
-                           personality, experiences, and aspirations to admission committees.
-                         "
-                        />
-                    </div>
-                    <div className="border bg-gray-800 rounded-lg p-4">
-                        <div className="">
-                        <span className="text-3xl font-extrabold text-white">
-                            Improve your English and French speaking, listening, reading,
-                            and writing skills with our expert teachers.
-                        </span>
-                            <div className="flex gap-3 mt-10">
-                                <div
-                                    className="block rounded-lg text-white">
-                                    <div
-                                        className="border-b-2 border-black/20 px-6 py-3 flex justify-between">Videos <FileTextOutlined/>
-                                    </div>
-                                    <div className="p-6">
-                                        <p className="text-base">
-                                            Get expert tips and personalized advice on creating compelling video
-                                            submissions that enhance your university application. We'll help you craft a
-                                            narrative that not only showcases your academic achievements but also
-                                            highlights your unique communication skills, creativity, and personality.
-                                            Learn how to present yourself confidently on camera, make a lasting
-                                            impression on the admissions committee, and effectively convey your passion
-                                            and fit for the program. Our guidance ensures your
-                                            video submission stands out, adding a dynamic and engaging dimension to your
-                                            application.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
+                <DocumentPreparation />
+
             </div>
             <div
                 style={{backgroundImage: `url(${socialEnterprise})`}}

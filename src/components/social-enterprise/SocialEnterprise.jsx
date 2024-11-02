@@ -1,16 +1,16 @@
 import servicesImage from "../../assets/social_enterprise_image.JPG";
 import servicesImage_1 from "../../assets/social_enterprise_image-1.JPG";
-import servicesImage_2 from "../../assets/social_enterprise_image-2.JPG";
-import servicesImage_3 from "../../assets/social_enterprise_image-3.JPG";
-import servicesImage_4 from "../../assets/social_enterprise_image-4.JPG";
+// import servicesImage_2 from "../../assets/social_enterprise_image-2.JPG";
+// import servicesImage_3 from "../../assets/social_enterprise_image-3.JPG";
+// import servicesImage_4 from "../../assets/social_enterprise_image-4.JPG";
 import Navbar from "../navbar/navbar.component.jsx";
-import profile_assessment from "../../assets/profile_assessment.JPG";
-import university_selection from "../../assets/university_selection.JPG";
-import application_assistance from "../../assets/application_assistance.JPG";
+import donation_clothes from "../../assets/food.jpg";
+import donation_tuition from "../../assets/tuion.jpg";
+import donation_food from "../../assets/donation.jpg";
 import { motion } from "framer-motion";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import { Input } from "antd";
-import { useEffect } from "react";
+// import { Input } from "antd";
+// import { useEffect } from "react";
 import Footer from "../../Footer.jsx";
 import HeroComponent from "../hero/hero.component.jsx";
 import SocialResponsiblityComponent from "../study-abroad/ui/social-responsibility-section.component.jsx";
@@ -86,19 +86,19 @@ const SocialEnterprise = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-16 w-4/5 mx-auto gap-8 place-items-center">
           <ServiceCard
-            title="Profile Assessment"
+            title="Donation of Food"
             description="Jasper Consultancy extends a helping hand to students seeking guidance on their educational journey through our Free Counselling services."
-            image={servicesImage_3}
+            image={donation_clothes}
           />
           <ServiceCard
-            title="University Selection"
+            title="Provistion of Tuition"
             description="Jasper Consultancy extends a helping hand to students seeking guidance on their educational journey through our Free Counselling services."
-            image={servicesImage_2}
+            image={donation_tuition}
           />
           <ServiceCard
-            title="Application Assistance"
+            title="Donation of Clothes"
             description="Jasper Consultancy extends a helping hand to students seeking guidance on their educational journey through our Free Counselling services."
-            image={servicesImage_4}
+            image={donation_food}
           />
         </div>
         <a
