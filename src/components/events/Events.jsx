@@ -24,6 +24,7 @@ const Events = () => {
                 title="At our ty education tail pnd enjoyable"
                 image={webinarIMG}
                 description="Lorem ipsum dolor sit amet, consectetur adipispquia. Voluptas dolorem eaque cum voluptatibus?"
+                button="Book Now"
             />
 
 

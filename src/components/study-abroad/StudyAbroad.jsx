@@ -40,6 +40,7 @@ const StudyAbroad = () => {
                   technology and expert instructors provide an engaging and interactive learning
                  experience, making complex subjects accessible and enjoyable.
                 "
+                button="Learn More"
            />
             <div className="flex flex-col py-24 pb-24">
                 <div className="flex flex-col gap-3 text-center w-full mx-auto mb-6">

@@ -52,6 +52,7 @@ const Services = () => {
           technology and expert instructors provide an engaging and interactive learning
           experience, making complex subjects accessible and enjoyable.
         "
+        button="Learn More"
       />
       <motion.div
         className="h-screen grid place-items-center"

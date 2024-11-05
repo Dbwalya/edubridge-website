@@ -38,6 +38,7 @@ const App = () => {
                   technology and expert instructors provide an engaging and interactive learning
                  experience, making complex subjects accessible and enjoyable.
                 "
+                button="Get Started"
            />
             <div className="bg-gray-100">
              <About />
