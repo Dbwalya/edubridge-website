@@ -16,7 +16,7 @@ export default function DefaultNavbar() {
           <div className="flex lg:flex-1">
             <Link to="/edubridge-website" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img alt="" src={logo} className="h-11 w-auto" />
+              <img alt="" src={logo} className="h-16 w-auto" />
             </Link>
           </div>
           <div className="flex lg:hidden">

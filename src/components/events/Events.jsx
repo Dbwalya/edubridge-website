@@ -21,9 +21,9 @@ const Events = () => {
             {/*</div>*/}
             <Navbar/>
             <HeroComponent
-                title="At our ty education tail pnd enjoyable"
+                title="Welcome to our Events Section we hope you attend our events"
                 image={webinarIMG}
-                description="Lorem ipsum dolor sit amet, consectetur adipispquia. Voluptas dolorem eaque cum voluptatibus?"
+                description="Lorem ipsum dolor sit amet, consectetur adipispquia. Lorem ipsum dolor sit amet, consectetur adipispquia. Voluptas dolorem eaque cum voluptatibus? Voluptas dolorem eaque cum voluptatibus? Lorem ipsum dolor sit amet, consectetur adipispquia. Voluptas dolorem eaque cum voluptatibus?"
                 button="Book Now"
             />
 

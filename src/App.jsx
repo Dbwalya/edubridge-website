@@ -46,7 +46,7 @@ const App = () => {
 
             <Banner />
             <Products />
-            <Social/>
+            <Social />
             <Book />
             <Contact />
             <Slider />
