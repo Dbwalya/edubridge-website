@@ -19,7 +19,7 @@ const Products = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center mt-10 gap-6 mx-auto">
           <div className="w-full p-4">
-            <div className="bg-white shadow-lg p-8 rounded-lg text-center">
+            <div className="bg-white shadow-md p-8 rounded-lg text-center">
               <div className="h-14 mb-5">
                 <img src={english_image} alt="" className="h-full mx-auto" />
               </div>
@@ -37,7 +37,7 @@ const Products = () => {
           </div>
 
           <div className="w-full p-4">
-            <div className="bg-white shadow-lg p-8 rounded-lg text-center">
+            <div className="bg-white shadow-md p-8 rounded-lg text-center">
 
               <div className="h-14 mb-5">
                 <img src={french_image} alt="" className="h-full mx-auto"/>
@@ -57,7 +57,7 @@ const Products = () => {
           </div>
 
           <div className="w-full p-4">
-            <div className="bg-white shadow-lg p-8 rounded-lg text-center">
+            <div className="bg-white shadow-md p-8 rounded-lg text-center">
               <div className="h-14 mb-5">
                 <img src={chinese_image} alt="" className="h-full mx-auto"/>
               </div>
@@ -76,7 +76,7 @@ const Products = () => {
           </div>
 
           <div className="w-full p-4">
-            <div className="bg-white shadow-lg p-8 rounded-lg text-center">
+            <div className="bg-white shadow-md p-8 rounded-lg text-center">
 
               <div className="h-14 mb-5">
                 <img src={spanish_image} alt="" className="h-full mx-auto"/>

@@ -3,7 +3,7 @@ import {ArrowRightOutlined} from "@ant-design/icons";
 
 const About = () => {
     return (
-        <div className="py-14 mx-auto w-5/6 ">
+        <div className="py-14 mx-auto w-5/6">
             <div className="">
                 <div className="">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-6 items-center mb-6">

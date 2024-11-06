@@ -64,7 +64,7 @@ export const InfiniteMovingCards = ({
                 {items.concat(items).map((item, idx) => (
                     <li
                         key={idx}
-                        className="infinite-card-item flex-shrink-0 rounded-2xl border border-slate-700 px-6 py-6"
+                        className="infinite-card-item flex-shrink-0 flex items-center text-2xl bg-gray-800 shadow text-center rounded-2xl border border-slate-700 px-6 py-6"
                         style={{
                             backgroundImage: `url(${item.image})`,
                             backgroundSize: "cover",

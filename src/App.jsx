@@ -40,15 +40,16 @@ const App = () => {
                 "
                 button="Get Started"
            />
-            <div className="bg-gray-100">
+            <div className="bg-white">
              <About />
             </div>
 
-            <Banner />
+            {/*<Banner />*/}
             <Products />
             <Social />
-            <Book />
+            {/*<Book />*/}
             <Contact />
+
             <Slider />
             {/*<Carousel />*/}
             <Subscribe />
