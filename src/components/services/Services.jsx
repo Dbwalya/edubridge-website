@@ -116,22 +116,22 @@ const Services = () => {
           variants={heroAnimation}
         >
           <motion.h1
-            className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl"
+            className="text-4xl font-bold text-center tracking-tight text-gray-100 sm:text-6xl"
             variants={heroAnimation}
           >
             Need Preparations for <br /> IETS Exams?
           </motion.h1>
           <motion.span
-            className="mt-6 text-lg leading-8 text-gray-200"
+            className="mt-7 mb-6 pl-6 text-lg text-center leading-8 text-gray-200"
             variants={heroAnimation}
           >
-            Jasper Consultancy extends a helping hand to students <br />
+            Edubridge Education Center extends a helping hand to students
             seeking guidance on their educational journey through our <br />
             free consultancy.
           </motion.span>
           <motion.a
             href="#"
-            className="rounded-md bg-[#d3ad56] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[]-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="md:w-auto self-center !w-fit mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-semibold text-center bg-gray-800 rounded-full text-white shadow-xs hover:bg-gray-700 transition-all duration-500"
             variants={heroAnimation}
           >
             Get in Touch
@@ -148,9 +148,9 @@ const Services = () => {
                 className="flex flex-col mx-auto text-center"
                 variants={heroAnimation}
             >
-                <h1 className="text-3xl mb-6">OUR SERVICES</h1>
+                <h1 className="text-3xl font-semibold  mb-6">OUR SERVICES</h1>
 
-                <span className="text-gray-700 w-3/5 mx-auto">
+                <span className="text-gray-700 px-3 md:w-3/5 mx-auto">
                 Our study center offers international education programs focused
                 on language mastery and cultural understanding. Through immersive courses
                 and expert guidance, we empower students to broaden
@@ -281,9 +281,9 @@ const Services = () => {
                 className="flex flex-col mx-auto text-center py-14"
                 variants={heroAnimation}
             >
-                <h1 className="text-3xl mb-6 mt-10">Products and Services</h1>
+                <h1 className="text-3xl font-semibold mb-6 mt-10 ">Products and Services</h1>
 
-                <span className="text-gray-700 w-3/5 mx-auto">
+                <span className="text-gray-700 px-3 md:w-3/5 mx-auto">
                     Explore our tailored educational programs, language courses,
                     and cultural immersion experiences designed to support personal growth and career advancement. Our services are
                     crafted to meet diverse learning needs and empower students for global success.

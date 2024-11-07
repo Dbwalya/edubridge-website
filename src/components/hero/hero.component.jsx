@@ -36,7 +36,7 @@ export default function HeroComponent({ button, description, title }) {
       <section className="pt-8 lg:pt-32 bg-center bg-cover bg-gradient-to-r from-zinc-900 to-zinc-900 h-screen relative">
         <div className="mx-auto flex flex-col gap-4 max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
           <motion.h1
-              className="max-w-4xl mx-auto text-center font-manrope font-bold text-4xl text-gray-100 mb-5 md:text-6xl leading-[50px]"
+              className="max-w-4xl mx-auto text-center font-manrope font-bold text-5xl text-gray-100 mb-5 md:text-6xl leading-[50px]"
               variants={titleVariants}
               initial="hidden"
               animate="visible"
