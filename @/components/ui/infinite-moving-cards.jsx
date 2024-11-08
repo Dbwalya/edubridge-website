@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
                                         items,
                                         direction = "left",
-                                        speed = "fast",
+                                        speed,
                                         pauseOnHover = true,
                                         className,
                                     }) => {
@@ -13,14 +13,42 @@ export const InfiniteMovingCards = ({
     const [start, setStart] = useState(false);
 
     useEffect(() => {
+        function handleResize() {
+            setSpeedBasedOnScreenSize();
+        }
+
+        // Initial setup of animation and screen-based speed
         addAnimation();
+        setSpeedBasedOnScreenSize();
+
+        // Adjust speed on window resize
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup listener on unmount
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     function addAnimation() {
         if (containerRef.current && scrollerRef.current) {
             getDirection();
-            getSpeed();
             setStart(true);
+        }
+    }
+
+    function setSpeedBasedOnScreenSize() {
+        if (containerRef.current) {
+            let duration;
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth <= 640) {
+                duration = "5s"; // Mobile view - fast
+            } else if (screenWidth <= 1024) {
+                duration = "16s"; // Small screens - normal
+            } else {
+                duration = "24s"; // Larger screens - slower
+            }
+
+            containerRef.current.style.setProperty("--animation-duration", duration);
         }
     }
 
@@ -30,14 +58,6 @@ export const InfiniteMovingCards = ({
                 "--animation-direction",
                 direction === "right" ? "forwards" : "reverse"
             );
-        }
-    };
-
-    const getSpeed = () => {
-        if (containerRef.current) {
-            const duration =
-                speed === "fast" ? "10s" : speed === "normal" ? "20s" : "40s";
-            containerRef.current.style.setProperty("--animation-duration", duration);
         }
     };
 
