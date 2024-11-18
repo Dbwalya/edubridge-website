@@ -293,8 +293,8 @@ const Services = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pb-28 px-10 w-5/5 mx-auto">
             <div
-                className="flex flex-col bg-gray-50 border shadow-sm rounded-xl  max-w-4xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-                <div className="p-4 md:p-5">
+                className="flex flex-col bg-gray-50 border pb-6 shadow-sm rounded-xl  max-w-4xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <div className="p-4 md:p-5 ">
                     <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                         International Education Services
                     </h3>
@@ -309,13 +309,14 @@ const Services = () => {
                     {/*    Last updated 5 mins ago*/}
                     {/*</p>*/}
                 </div>
+                <button className="bg-black text-white rounded-lg w-3/5 shadow-sm mt-6 mx-auto py-1.5">Call</button>
                 {/*<img className="w-full h-auto rounded-b-xl"*/}
                 {/*     src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"*/}
                 {/*     alt="Card Image"/>*/}
             </div>
 
             <div
-                className="flex flex-col max-w-4xl bg-gray-50 border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                className="flex flex-col max-w-4xl bg-gray-50 pb-4 border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
                 <div className="p-4 md:p-5">
                     <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                         Study Center
@@ -331,13 +332,15 @@ const Services = () => {
                     {/*    Last updated 5 mins ago*/}
                     {/*</p>*/}
                 </div>
+                <button className="bg-black text-white rounded-lg w-3/5 shadow-sm mb-5 mx-auto py-1.5">Call</button>
+
                 {/*<img className="w-full h-auto rounded-b-xl"*/}
                 {/*     src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"*/}
                 {/*     alt="Card Image"/>*/}
             </div>
 
             <div
-                className="flex flex-col bg-gray-50 max-w-4xl border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                className="flex flex-col bg-gray-50  pb-5 border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
                 <div className="p-4 md:p-5">
                     <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                         Empower Futures
@@ -355,10 +358,12 @@ const Services = () => {
                 {/*<img className="w-full h-auto rounded-b-xl"*/}
                 {/*     src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"*/}
                 {/*     alt="Card Image"/>*/}
+                <button className="bg-black text-white rounded-lg w-3/5 shadow-sm mt-5 mx-auto py-1.5">Call</button>
+
             </div>
 
             <div
-                className="flex flex-col bg-gray-50 max-w-4xl border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                className="flex flex-col bg-gray-50 max-w-4xl pb-5 border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
                 <div className="p-4 md:p-5">
                     <h3 className="text-lg font-bold text-gray-800 dark:text-white">
                         Language Services
@@ -374,6 +379,8 @@ const Services = () => {
                     {/*    Last updated 5 mins ago*/}
                     {/*</p>*/}
                 </div>
+                <button className="bg-black text-white rounded-lg w-3/5 shadow-sm mt-5 mx-auto py-1.5">Call</button>
+
                 {/*<img className="w-full h-auto rounded-b-xl"*/}
                 {/*     src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"*/}
                 {/*     alt="Card Image"/>*/}

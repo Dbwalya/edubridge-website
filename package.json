@@ -18,7 +18,7 @@
 
     "dev": "vite",
 
-    "build": "vite build --outDir docs",
+    "build": "vite build --outDir dist",
 
     "lint": "eslint .",
 
